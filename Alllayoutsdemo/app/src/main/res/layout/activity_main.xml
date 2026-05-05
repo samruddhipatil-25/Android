@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="All Layouts Demo"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"/>
+
+        <!-- 1. LinearLayout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="1. LinearLayout"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="8dp"
+            android:background="#FFE0B2"
+            android:layout_marginTop="8dp">
+            <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="A"/>
+            <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="B"/>
+            <Button android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="C"/>
+        </LinearLayout>
+
+        <!-- 2. RelativeLayout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2. RelativeLayout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#C5E1A5"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/relText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Center Text"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentTop="true"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottom Right"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"/>
+        </RelativeLayout>
+
+        <!-- 3. ConstraintLayout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="3. ConstraintLayout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#B3E5FC"
+            android:padding="8dp">
+            <TextView
+                android:id="@+id/constraintText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Top Left"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <Button
+                android:id="@+id/constraintButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Bottom Right"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"/>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <!-- 4. FrameLayout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4. FrameLayout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="#FFCDD2"
+            android:padding="8dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overlay Text"
+                android:textSize="16sp"
+                android:textColor="#FFFFFF"
+                android:layout_gravity="center"/>
+        </FrameLayout>
+
+        <!-- 5. TableLayout -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="5. TableLayout"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_marginTop="16dp"/>
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:stretchColumns="*"
+            android:background="#D1C4E9"
+            android:padding="8dp">
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Name"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Name"/>
+            </TableRow>
+            <TableRow>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Email"/>
+                <EditText android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="Enter Email"/>
+            </TableRow>
+            <TableRow>
+                <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit"/>
+            </TableRow>
+        </TableLayout>
+
+    </LinearLayout>
+</ScrollView>
