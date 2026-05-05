@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">practical13</string>
+    <string name="TODO" text="send_notification">send notification </string>
+    <string name="show_notification">Show Notification</string>
+</resources>
