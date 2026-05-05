@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- Name Input -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Enter Name:" />
+        <EditText
+            android:id="@+id/editTextName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name" />
+
+        <!-- Gender Radio Buttons -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Select Gender:"
+            android:layout_marginTop="10dp"/>
+        <RadioGroup
+            android:id="@+id/radioGroupGender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <RadioButton android:id="@+id/radioMale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Male"/>
+            <RadioButton android:id="@+id/radioFemale" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Female"/>
+        </RadioGroup>
+
+        <!-- Hobbies CheckBoxes -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Hobbies:" android:layout_marginTop="10dp"/>
+        <CheckBox android:id="@+id/checkBoxReading" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Reading"/>
+        <CheckBox android:id="@+id/checkBoxTraveling" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Traveling"/>
+        <CheckBox android:id="@+id/checkBoxSports" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Sports"/>
+
+        <!-- Country Spinner -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Select Country:" android:layout_marginTop="10dp"/>
+        <Spinner android:id="@+id/spinnerCountry" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+
+        <!-- Subscription Switch -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Subscribe to Newsletter?" android:layout_marginTop="10dp"/>
+        <Switch android:id="@+id/switchSubscribe" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Yes/No"/>
+
+        <!-- Feedback RatingBar -->
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Rate Our App:" android:layout_marginTop="10dp"/>
+        <RatingBar android:id="@+id/ratingBarFeedback" android:layout_width="wrap_content" android:layout_height="wrap_content" android:numStars="5" android:stepSize="1"/>
+
+        <!-- Submit Button -->
+        <Button android:id="@+id/buttonSubmit" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Submit" android:layout_marginTop="20dp"/>
+
+        <!-- Result Display -->
+        <TextView android:id="@+id/textViewResult" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="" android:layout_marginTop="20dp"/>
+    </LinearLayout>
+</ScrollView>
