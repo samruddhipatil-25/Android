@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">practical 11</string>
+    <string name="enter_the_data"> entre the data </string>
+    <string name="data_saved">Data Saved Successfully</string>
+    <string name="load">load</string>
+
+</resources>
