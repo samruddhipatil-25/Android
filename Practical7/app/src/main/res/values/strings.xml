@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Practical7</string>
+    <string name="take_photo">Take a Photo</string>
+    <string name="captured_image">Captured Image</string>
+</resources>
